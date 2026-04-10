@@ -4,99 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+
     <style>
-        body {
-            background-color: #88d2fa;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #4c05a8;
-        }
-        p {
-            text-indent: 50px;
-            font-size: 20px;
-            color: rgb(207, 13, 116);
-        }h2 { Font-size: 24px;
-            font-family: cursive;
-            color: #330342;
-        }
-        ul {
-            font-size: 18px;
-            font-family:cursive  
-            color#850956;
+        /* MAIN SECTION BACKGROUND */
+        .intro-section {
+            background-color: #F9EAE1; /* pale pink */
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
         }
 
-        h3 { 
-            font-family: cursive;
-            font-size: 22px;
-            color: #1c0663;
+        /* SHARED HEADER STYLE */
+        .section-header {
+            background-color: #6A5ACD; /* deep lavender */
+            color: #F9EAE1; /* pale pink text */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            font-size: 28px;
+            letter-spacing: 1px;
+            text-align: center;
         }
-        ol {
-            font-family: cursive;
+
+        /* PHOTO CONTAINER */
+        .photo-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+
+        /* PROFILE PHOTO */
+        .profile-photo {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #6A5ACD; /* lavender border */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* ABOUT ME CONTAINER */
+        .about-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 800px;
+            color: #0A1A4F; /* deep blue text */
+        }
+
+        .about-container p {
             font-size: 18px;
-            color: #08476b;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* RESUME BUTTON */
+        .resume-button-container {
+            text-align: center;
+        }
+
+        .resume-button {
+            background-color: #6A5ACD; /* deep lavender */
+            color: #F9EAE1; /* pale pink text */
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            transition: 0.3s ease;
+            display: inline-block;
+        }
+
+        .resume-button:hover {
+            background-color: #0A1A4F; /* deep blue hover */
+            color: #F9EAE1;
+            transform: translateY(-2px);
         }
     </style>
 </head>
-<!--
-    FILE: index.html
-    DESCRIPTION: Main landing page for the About Me project
-    LOCATION: /C:/Users/burto/projects/About-Me-HTML/
-    
-    PURPOSE:
-    This file serves as the entry point for the About Me website,
-    containing the primary HTML structure and styling.
-    
-    CONTENTS:
-    - HTML structure for personal portfolio/about page
-    - Embedded CSS styling rules in <style> tag
-    
-    LAST MODIFIED: [DATE]
-    AUTHOR: [April Dianna Burton]
--->
-<style>
-    p{
-        text-indent: 50px;
-        font-size: 20px;
-        font-family:cursive;
-        color:rgb(218, 8, 120);
-    }
-    ul{
-        font-size: 18px;
-        font-family:cursive;
-        color:#0c6d5b;
-    }
-</style>
-<body>
-    <h1> "Welcome to my page!" </h1>
-    <p> I wrote this HTML and it is the start of my programming course. 
-        I will continue to update it as I progress through the course with "Code:You". 
-        So far it has challenged me to come out of my "comfort zone"!<div class=></div></p>
-    
-   <ul>
-      <li>I Love Learning About Web Developing</li>
-      <li>I Love The Coding Aspect of "ME" Creating something</li>
-      <li>I Love My Two Cats, "Mottie and Jackson"</li>
-    </ul>
-   
-    <img src="https://code-you.org/wp-content/uploads/2023/07/codeyou-logo-wink.gif">
-    
-    <h2> Hello I Am APRIL DIANNA BURTON</h2>
-    <p>I started this course as a self taught coder! 
-     Coding has given me a 'confidence' that I never possessed before! 
-     It all (my learning to become a programmer) got started with obtaining my "awesome cybersecurity certificate" and it feels really amazing to be on this 'coding Journey'!!
-      It is a new chapter in my life's story!
-    I am finding that coding is a lot more challenging then I thought before.
-    But I am determined to succeed!! Wish me luck!!</p>
-    <h3>My Goals</h3>
-    <ol>
-        <li>Complete the Code:You course</li>
-        <li>Build a personal portfolio website</li>
-        <li>Learn advanced web development skills</li>
-    </ol>
 
-   
-<footer>    
+<body>
+
+<section id="intro-block" class="intro-section">
+
+    <!-- PHOTO SECTION -->
+    <div class="photo-container">
+        <h2 class="section-header">My Photo</h2>
+
+        <!-- Replace this URL later when you're ready -->
+        <img 
+            src="https://YOUR-IMAGE-URL-HERE.jpg" 
+            alt="April Burton" 
+            class="profile-photo"
+        >
+    </div>
+
+    <!-- ABOUT ME SECTION -->
+    <div class="about-container">
+        <h2 class="section-header">About Me</h2>
+
+        <p>
+            I am an emerging cybersecurity analyst with hands-on experience in threat analysis, incident response, Linux command-line operations, Python scripting, and security monitoring. Through the Google Cybersecurity Certificate and independent lab work, I’ve developed practical skills in SIEM investigation, log analysis, vulnerability identification, and risk assessment.
+        </p>
+
+        <p>
+            Before transitioning into cybersecurity, I worked in roles that required precision, confidentiality, and strong problem-solving — including front-desk operations, night auditing, and healthcare support. These positions strengthened my ability to manage sensitive information, maintain accuracy under pressure, and respond quickly to unexpected issues.
+        </p>
+
+        <p>
+            I am committed to continuous learning and focused on building a strong foundation in cybersecurity. My goal is to apply my analytical mindset, integrity, and technical skills in an entry-level cybersecurity or security operations role where I can contribute to protecting systems and data while growing professionally.
+        </p>
+    </div>
+
+    <!-- RESUME BUTTON -->
+    <div class="resume-button-container">
+        <a class="resume-button" href="https://raw.githubusercontent.com/Adburt49/cybersecurity.portfolio/master/April-Burton-Resume-Modern.docx" download>
+            Download My Resume
+        </a>
+    </div>
+<!<!-- PROJECTS SECTION -->
+<div class="projects-container">
+    <h2 class="section-header">Projects</h2>
+
+    <p class="projects-note">
+        I will add my cybersecurity projects here soon. This section will include labs, scripts, SIEM investigations, and hands-on security work.
+    </p>
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+        <h3 class="project-title">SIEM Log Analysis Lab</h3>
+        <p class="project-description">
+            Placeholder text — you can describe how you investigated alerts, analyzed logs, and identified suspicious activity.
+        </p>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+        <h3 class="project-title">Linux Security Hardening</h3>
+        <p class="project-description">
+            Placeholder text — you can describe user management, permissions, firewall rules, or system auditing tasks.
+        </p>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+        <h3 class="project-title">Python Automation Script</h3>
+        <p class="project-description">
+            Placeholder text — you can describe a script that automates log parsing, password checks, or file monitoring.
+        </p>
+    </div>
+
+<!-- PROJECT 4 -->
+    <div class="project-card">
+        <h3 class="project-title">Incident Response Scenario</h3>
+        <p class="project-description">
+            Placeholder text — you can describe how you identified, contained, and documented a simulated security incident.
+        </p>
+    </div>
+
+</div>
+-- PROJECTS SECTION -->
+
+    </div>
+
+</div>
+
+</section>
+
 </body>
 </html>
-</footer>
